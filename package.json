@@ -4,8 +4,11 @@
   "description": "Gallery for profesional photografer",
   "main": "server.js",
   "scripts": {
-    "start": "node backend/server.js",
-    "dev": "nodemon backend/server.js"
+    "client": "npm start --prefix client",
+    "server": "nodemon backend/server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm build --prefix client",
+    "start": "node backend/server.js"
   },
   "author": "Carlos Herrero",
   "license": "MIT",
