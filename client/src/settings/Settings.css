@@ -1,0 +1,84 @@
+.Settings {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Part {
+  height: fit;
+  width: 50%;
+  min-width: 300px;
+  max-width: 500px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+}
+
+.Form {
+  height: fit;
+  width: 100%;
+}
+
+.Title {
+  margin: 0px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.ImageCenter {
+  height: fit;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.SelectImage {
+  height: fit;
+  width: fit;
+  padding: 2%;
+  color: black;
+  text-align: center;
+
+  /* shadow */
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.7);
+}
+
+.Name {
+  height: 80%;
+  width: 100%;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.Text {
+  width: 100%;
+  text-align: left;
+}
+
+.Message {
+  height: 100px;
+  width: 100%;
+  text-align: left;
+}
