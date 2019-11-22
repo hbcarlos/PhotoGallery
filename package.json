@@ -1,22 +1,33 @@
 {
   "name": "photo_gallery",
   "version": "1.0.0",
-  "description": "Gallery for profesional photografer",
+  "author": "Carlos Herrero",
+  "license": "MIT",
+  "description": "Gallery for photo profesionals",
   "main": "server.js",
   "scripts": {
     "client": "npm start --prefix client",
-    "server": "nodemon backend/server.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "build": "npm build --prefix client",
-    "start": "node backend/server.js"
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "start": "npm run build --prefix client && node server.js"
   },
-  "author": "Carlos Herrero",
-  "license": "MIT",
   "dependencies": {
-    "concurrently": "^5.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.2.0",
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
-    "nodemon": "^1.19.4"
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "concurrently": "^5.0.0",
+    "nodemon": "^1.19.4",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.2.1"
   }
 }
