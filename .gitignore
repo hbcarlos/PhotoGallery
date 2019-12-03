@@ -4,7 +4,10 @@
 ./node_modules
 
 # data
-./backend/storage
+./backend/storage/events
+./backend/storage/galleries
+./backend/storage/photos
+./backend/storage/users
 
 # keys
 ./backend/config.js
