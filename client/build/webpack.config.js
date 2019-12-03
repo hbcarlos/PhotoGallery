@@ -1,9 +1,11 @@
 const path = require('path');
 
+console.log(path.resolve(__dirname, '../public'));
+
 module.exports = {
-  entry: './src/index.js',
+  entry: path.resolve(__dirname, '../src/index.js'),
   output: {
-    path: path.resolve(__dirname, '../public'),
+    path: path.resolve(__dirname, '../public/'),
     filename: 'index.js'
   },
   module: {
@@ -21,11 +23,22 @@ module.exports = {
         }
       },
       { 
-        test : /\.(css)$/,
+        test : /\.css$/, // /\.(css|scss)$/,
+        include: [path.resolve(__dirname, '../src'), path.resolve(__dirname, '../../node_modules/bootstrap')],
+        exclude: /(bower_components)/,
+        use: ['style-loader', 'css-loader']
+      },
+      { 
+        test : /\.(gif|png|jpeg|jpg|svg)$/i,
         include: path.resolve(__dirname, '../src'),
         exclude: /(node_modules|bower_components)/,
-        use: ['style-loader','css-loader']
+        use: ['url-loader']
       }
     ]
+  },
+  target: 'node',
+  node: {
+    __dirname: false,
+    __filename: false,
   }
 };

@@ -7,17 +7,14 @@ This project is part of a set of tools that are being developed for photo profes
 
 ## Commands
 
-### `npm run dev`
-**To execute the client and the server for development.**
-
 ### `npm run client`
 **To execute the client for development.**
 
 ### `npm run server`
 **To execute the server for development.**
 
-### `npm run build`
-**To build the client for production.**
+### `npm run dev`
+**To execute the client and the server for development.**
 
 ### `npm run start`
-**To execute the complete solution for production.**
+**To build the client and execute the complete solution for production.**
